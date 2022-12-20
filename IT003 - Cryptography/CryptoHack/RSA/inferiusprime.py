@@ -1,0 +1,15 @@
+n = 742449129124467073921545687640895127535705902454369756401331
+e = 3
+ct = 39207274348578481322317340648475596807303160111338236677373
+
+from gmpy2 import iroot
+from Crypto.Util.number import *
+
+# use factordb.com to factor n
+p, q = 752708788837165590355094155871, 986369682585281993933185289261
+
+d = inverse(e, (p - 1)*(q - 1))
+flag = pow(ct, d, n)
+print(long_to_bytes(flag))
+
+# crypto{N33d_b1g_pR1m35}

@@ -1,0 +1,1 @@
+Ở bài này Alice sẽ gửi cho Bob yêu cầu chọn bộ tham số để mã hóa, trong đó p là số nguyên tố 64, 128, 256, 512, 1024 hoặc 1536 bit. Chúng ta biết được Bob luôn chọn private_key b là cố định nên đầu tiên ta sẽ yêu cầu Bob tính B = g^b (mod p) với p là 64 bits. Vì p nhỏ nên ta nhanh chóng tìm được b bằng thuật toán Giant_Step-Baby_Step. Có b rồi thì mọi chuyện coi như xong!
